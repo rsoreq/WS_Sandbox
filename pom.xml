@@ -1,0 +1,39 @@
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.ksa</groupId>
+    <artifactId>ksa-service-root</artifactId>
+    <version>3.9.0</version>
+  </parent>
+
+  <artifactId>ksa-security-service</artifactId>
+  <packaging>jar</packaging>
+
+  <name>ksa-security-service</name>
+  <description>Test Service by WhiteSource CSMs</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.ksa</groupId>
+      <artifactId>ksa-security-dao</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <!-- shiro -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>1.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-ehcache</artifactId>
+      <version>1.2.0</version>
+    </dependency>
+	<dependency>
+		<groupId>org.apache.jmeter</groupId>
+		<artifactId>jorphan</artifactId>
+		<version>5.2.1</version>
+	</dependency>
+  </dependencies>
+</project>
